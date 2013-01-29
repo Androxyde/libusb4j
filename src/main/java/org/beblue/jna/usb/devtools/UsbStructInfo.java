@@ -18,40 +18,30 @@
  */
 package org.beblue.jna.usb.devtools;
 
-import org.beblue.jna.usb.usb_bus;
-import org.beblue.jna.usb.usb_config_descriptor;
-import org.beblue.jna.usb.usb_dev_handle;
-import org.beblue.jna.usb.usb_device;
-import org.beblue.jna.usb.usb_device_descriptor;
-import org.beblue.jna.usb.usb_endpoint_descriptor;
-import org.beblue.jna.usb.usb_interface;
-import org.beblue.jna.usb.usb_interface_descriptor;
+import org.beblue.jna.usb.*;
 
 /**
  * Prints detailed information about all usb structures.
- * 
+ *
  * @author Mario Boikov
- * 
  */
 public class UsbStructInfo {
 
     public static void main(String[] args) {
-        System.out.printf("usb_bus == %s\n", new usb_bus().toString());
+        System.out.println("usb_bus == " + new usb_bus().toString());
 
-        System.out.printf("usb_cfg_desc == %s\n", new usb_config_descriptor().toString());
+        System.out.println("usb_cfg_desc == " + new usb_config_descriptor().toString());
 
-        System.out.printf("usb_dev_handle == %s\n", new usb_dev_handle().toString());
+        System.out.println("usb_dev_handle == " + new usb_dev_handle().toString());
 
-        System.out.printf("usb_dev_desc == %s\n", new usb_device_descriptor().toString());
+        System.out.println("usb_dev_desc == " + new usb_device_descriptor().toString());
 
-        System.out.printf("usb_device == %s\n", new usb_device().toString());
+        System.out.println("usb_device == " + new usb_device().toString());
 
-        System.out.printf("usb_endpoint_desc == %s\n",
-                new usb_endpoint_descriptor().toString());
+        System.out.println("usb_endpoint_desc == " + new usb_endpoint_descriptor().toString());
 
-        System.out.printf("usb_interface_desc == %s\n",
-                new usb_interface_descriptor().toString());
+        System.out.println("usb_interface_desc == " + new usb_interface_descriptor().toString());
 
-        System.out.printf("usb_interface == %s\n", new usb_interface().toString());
+        System.out.println("usb_interface == " + new usb_interface().toString());
     }
 }
