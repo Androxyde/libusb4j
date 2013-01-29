@@ -4,7 +4,7 @@
   <artifactId>libusb4j</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>libusb4j</name>
-  <description>A maven port of the ant based libusb4j from http://kenai.com/projects/libusb4j</description>
+  <description>libusb4j from https://github.com/derabbink/libusb4j</description>
   <dependencies>
   	<dependency>
   		<groupId>com.sun.jna</groupId>
