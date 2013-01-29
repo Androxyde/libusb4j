@@ -10,4 +10,5 @@
 .project
 .settings/
 target/
-
+.idea
+libusb4j.iml
